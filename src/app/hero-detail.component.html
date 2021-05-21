@@ -1,0 +1,15 @@
+<p style="background-color: yellow;">
+  The child component(hero-detail.component.ts) displays the details of the
+  passed hero object and the old hero name using ngOnChanges lifecycle
+  method.
+</p>
+<div *ngIf="hero">
+  <h2>{{ hero.name }} details!</h2>
+  <div><label>id: </label>{{ hero.id }}</div>
+  <div>
+    <label>name: </label>
+    <input [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+  <br />
+  <div>Old Hero was: {{ oldHero }}</div>
+</div>
